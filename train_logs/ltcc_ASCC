@@ -1,0 +1,153 @@
+------------------------ Args -------------------------
+dataset: ltcc
+dataset_root: dataset/data
+dataset_filename: LTCC-reID
+height: 384
+width: 192
+horizontal_flip_pro: 0.5
+pad_size: 10
+random_erasing_pro: 0.5
+split_id: 0
+train_batch: 32
+test_batch: 128
+num_workers: 8
+num_instances: 8
+start_epoch: 0
+max_epoch: 120
+margin: 0.3
+lr: 0.0003
+warm_up_factor: 0.1
+warm_up_method: linear
+warm_up_epochs: 10
+step_milestones: [30, 60]
+gamma: 0.1
+weight_decay: 0.0005
+weight_decay_bias: 0.0005
+resume: 
+use_cpu: False
+gpu_devices: 0
+seed: 666
+evaluate: False
+print_train_info_epoch_freq: 5
+start_eval_epoch: 0
+eval_epoch: 5
+reranking: False
+save_dir: ltcc_save_5
+save_checkpoint: True
+tri_start_epoch: 35
+--------------------- Args End ------------------------
+Currently using GPU 0
+Initializing dataset ltcc
+=> LTCC loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # clothes
+  ----------------------------------------
+  train    |    77 |     9576 |       256
+  query    |    75 |      493 |
+  gallery  |    75 |     7050 |
+  ----------------------------------------
+  total    |   152 |    17119 |       477
+  ----------------------------------------
+==> Start training
+Ep5 Id:1.7127 Tri:0.0000 
+==> Test
+Epoch 5: mAP: 24.6223%  R-1 : 61.6633%  R-5 : 74.2393%  R-10: 79.5132%  
+Epoch 5: mAP: 9.8791%  R-1 : 26.7857%  R-5 : 43.3673%  R-10: 51.5306%  
+Ep10 Id:1.2514 Tri:0.0000 
+==> Test
+Epoch 10: mAP: 26.2595%  R-1 : 63.4888%  R-5 : 76.2677%  R-10: 80.5274%  
+Epoch 10: mAP: 10.2132%  R-1 : 26.7857%  R-5 : 43.8776%  R-10: 49.7449%  
+Ep15 Id:1.0792 Tri:0.0000 
+==> Test
+Epoch 15: mAP: 28.0480%  R-1 : 68.9655%  R-5 : 80.7302%  R-10: 85.1927%  
+Epoch 15: mAP: 11.6915%  R-1 : 33.6735%  R-5 : 48.2143%  R-10: 55.6122%  
+Ep20 Id:1.0230 Tri:0.0000 
+==> Test
+Epoch 20: mAP: 27.2304%  R-1 : 70.9939%  R-5 : 80.5274%  R-10: 83.5700%  
+Epoch 20: mAP: 10.9180%  R-1 : 31.3776%  R-5 : 45.9184%  R-10: 52.8061%  
+Ep25 Id:0.9783 Tri:0.0000 
+==> Test
+Epoch 25: mAP: 27.4761%  R-1 : 68.9655%  R-5 : 80.7302%  R-10: 83.5700%  
+Epoch 25: mAP: 10.5722%  R-1 : 31.1224%  R-5 : 48.9796%  R-10: 55.1020%  
+Ep30 Id:0.9512 Tri:0.0000 
+==> Test
+Epoch 30: mAP: 25.5135%  R-1 : 66.5314%  R-5 : 76.6734%  R-10: 79.7160%  
+Epoch 30: mAP: 10.4480%  R-1 : 31.3776%  R-5 : 45.4082%  R-10: 52.5510%  
+Ep35 Id:0.8461 Tri:0.0000 
+==> Test
+Epoch 35: mAP: 31.4563%  R-1 : 71.6024%  R-5 : 80.7302%  R-10: 84.3813%  
+Epoch 35: mAP: 12.7764%  R-1 : 38.0102%  R-5 : 52.0408%  R-10: 57.9082%  
+Ep40 Id:0.8640 Tri:0.0381 
+==> Test
+Epoch 40: mAP: 40.7965%  R-1 : 76.2677%  R-5 : 84.3813%  R-10: 88.0325%  
+Epoch 40: mAP: 19.0644%  R-1 : 42.8571%  R-5 : 57.6531%  R-10: 65.3061%  
+Ep45 Id:0.8434 Tri:0.0181 
+==> Test
+Epoch 45: mAP: 40.9594%  R-1 : 77.4848%  R-5 : 84.9899%  R-10: 87.8296%  
+Epoch 45: mAP: 19.4182%  R-1 : 46.6837%  R-5 : 58.6735%  R-10: 65.5612%  
+Ep50 Id:0.8337 Tri:0.0100 
+==> Test
+Epoch 50: mAP: 40.0657%  R-1 : 77.2819%  R-5 : 85.8012%  R-10: 89.0467%  
+Epoch 50: mAP: 18.7663%  R-1 : 43.8776%  R-5 : 58.6735%  R-10: 64.2857%  
+Ep55 Id:0.8238 Tri:0.0077 
+==> Test
+Epoch 55: mAP: 40.2673%  R-1 : 77.0791%  R-5 : 86.2069%  R-10: 89.2495%  
+Epoch 55: mAP: 19.1745%  R-1 : 44.3878%  R-5 : 58.4184%  R-10: 65.3061%  
+Ep60 Id:0.8162 Tri:0.0056 
+==> Test
+Epoch 60: mAP: 40.0812%  R-1 : 76.2677%  R-5 : 84.3813%  R-10: 88.4381%  
+Epoch 60: mAP: 18.2905%  R-1 : 42.6020%  R-5 : 55.6122%  R-10: 63.5204%  
+Ep65 Id:0.8114 Tri:0.0053 
+==> Test
+Epoch 65: mAP: 40.7315%  R-1 : 76.8763%  R-5 : 85.1927%  R-10: 89.0467%  
+Epoch 65: mAP: 18.8312%  R-1 : 43.6224%  R-5 : 56.6327%  R-10: 63.7755%  
+Ep70 Id:0.8098 Tri:0.0036 
+==> Test
+Epoch 70: mAP: 41.1262%  R-1 : 76.8763%  R-5 : 84.9899%  R-10: 88.6410%  
+Epoch 70: mAP: 19.0136%  R-1 : 44.3878%  R-5 : 57.3980%  R-10: 63.2653%  
+Ep75 Id:0.8067 Tri:0.0040 
+==> Test
+Epoch 75: mAP: 41.1035%  R-1 : 77.6876%  R-5 : 85.3955%  R-10: 89.0467%  
+Epoch 75: mAP: 19.1182%  R-1 : 44.1327%  R-5 : 56.6327%  R-10: 63.7755%  
+Ep80 Id:0.8076 Tri:0.0040 
+==> Test
+Epoch 80: mAP: 40.8444%  R-1 : 77.0791%  R-5 : 86.0041%  R-10: 89.0467%  
+Epoch 80: mAP: 18.8000%  R-1 : 44.1327%  R-5 : 56.8878%  R-10: 63.0102%  
+Ep85 Id:0.8080 Tri:0.0039 
+==> Test
+Epoch 85: mAP: 41.2661%  R-1 : 76.8763%  R-5 : 84.5842%  R-10: 88.4381%  
+Epoch 85: mAP: 19.3220%  R-1 : 45.4082%  R-5 : 56.3776%  R-10: 62.2449%  
+Ep90 Id:0.8039 Tri:0.0022 
+==> Test
+Epoch 90: mAP: 41.0279%  R-1 : 76.6734%  R-5 : 84.3813%  R-10: 87.8296%  
+Epoch 90: mAP: 19.0889%  R-1 : 44.6429%  R-5 : 56.6327%  R-10: 63.2653%  
+Ep95 Id:0.8047 Tri:0.0051 
+==> Test
+Epoch 95: mAP: 40.8442%  R-1 : 77.0791%  R-5 : 85.1927%  R-10: 88.2353%  
+Epoch 95: mAP: 18.9116%  R-1 : 43.8776%  R-5 : 57.6531%  R-10: 61.9898%  
+Ep100 Id:0.8043 Tri:0.0036 
+==> Test
+Epoch 100: mAP: 40.9756%  R-1 : 77.2819%  R-5 : 85.1927%  R-10: 89.0467%  
+Epoch 100: mAP: 18.8717%  R-1 : 44.8980%  R-5 : 57.6531%  R-10: 61.9898%  
+Ep105 Id:0.8008 Tri:0.0033 
+==> Test
+Epoch 105: mAP: 40.7854%  R-1 : 78.0933%  R-5 : 85.1927%  R-10: 88.0325%  
+Epoch 105: mAP: 18.7963%  R-1 : 45.4082%  R-5 : 56.8878%  R-10: 61.4796%  
+Ep110 Id:0.8002 Tri:0.0033 
+==> Test
+Epoch 110: mAP: 40.9421%  R-1 : 78.4990%  R-5 : 85.1927%  R-10: 88.4381%  
+Epoch 110: mAP: 18.9817%  R-1 : 45.4082%  R-5 : 58.6735%  R-10: 61.9898%  
+Ep115 Id:0.8014 Tri:0.0056 
+==> Test
+Epoch 115: mAP: 40.9530%  R-1 : 77.4848%  R-5 : 85.1927%  R-10: 88.2353%  
+Epoch 115: mAP: 18.7941%  R-1 : 43.3673%  R-5 : 57.3980%  R-10: 61.9898%  
+Ep120 Id:0.7990 Tri:0.0031 
+==> Test
+Epoch 120: mAP: 40.7566%  R-1 : 76.6734%  R-5 : 86.2069%  R-10: 88.4381%  
+Epoch 120: mAP: 18.5110%  R-1 : 42.8571%  R-5 : 56.8878%  R-10: 63.0102%  
+==> Best mAP 41.2661%, achieved at epoch 85
+==> Best Rank-1 78.4990%, achieved at epoch 110
+==> Best mAP_2 19.4182%, achieved at epoch 45
+==> Best Rank-1_2 46.6837%, achieved at epoch 45
+Finished. Total elapsed time (h:m:s): 5:14:34. Training time (h:m:s): 4:25:11.
