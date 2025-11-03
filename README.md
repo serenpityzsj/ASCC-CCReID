@@ -51,6 +51,8 @@ python main.py --gpu_devices 0 --dataset DATASET --dataset_root DATASET_ROOT --d
 The above three arguments are set corresponding to Training.
 
 The code is based on CSSC-CCReID
+
+```sh
 @inproceedings{wang2025content,
   title={Content and salient semantics collaboration for cloth-changing person re-identification},
   author={Wang, Qizao and Qian, Xuelin and Li, Bin and Chen, Lifeng and Fu, Yanwei and Xue, Xiangyang},
@@ -59,3 +61,4 @@ The code is based on CSSC-CCReID
   year={2025},
   organization={IEEE}
 }
+```
