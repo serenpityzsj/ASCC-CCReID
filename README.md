@@ -1,5 +1,7 @@
 # ASCC-CCReID
+
 ASCC: Semantic Cross-branch Collaboration with Chebyshev’s Theorem-guided Graph Re-ranking for Cloth-Changing Person Re-Identification
+
 ## Getting Started
 
 ### Environment
@@ -34,6 +36,8 @@ python main.py --gpu_devices 0 --dataset celeb --dataset_root DATASET_ROOT --dat
 `--dataset_root` : replace `DATASET_ROOT` with your dataset root path
 
 `--save_dir`: replace `SAVE_DIR` with the path to save log file and checkpoints
+
+To facilitate reproduction and comparison, we release the **trained model weights** and complete training logs for the datasets. This includes our proposed method's SOTA performance models. All resources can be accessed via: [Download Link](https://pan.baidu.com/s/1dEVDaCyXCNMO0MQsabUcbA?pwd=eve5 )
 
 
 ### Evaluation
