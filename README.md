@@ -1,5 +1,5 @@
 # ASCC-CCReID
-Attention-based Semantics Cross-branch Collaboration with Cheb-GR for Cloth-Changing Person Re-Identification
+ASCC: Semantic Cross-branch Collaboration with Chebyshev’s Theorem-guided Graph Re-ranking for Cloth-Changing Person Re-Identification
 ## Getting Started
 
 ### Environment
