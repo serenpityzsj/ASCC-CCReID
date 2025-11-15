@@ -1,6 +1,7 @@
 # ASCC-CCReID
 
 ASCC: Semantic Cross-branch Collaboration with Chebyshev’s Theorem-guided Graph Re-ranking for Cloth-Changing Person Re-Identification
+Our core code of the model will be updated afer the paper is accepted!
 
 ## Getting Started
 
